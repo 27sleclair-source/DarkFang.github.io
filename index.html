@@ -54,12 +54,19 @@
     /* --- FIXED HERO BANNER CONTAINER --- */
     .hero { 
       text-align: center; 
-      padding: 100px 20px; 
-      /* GITHUB PAGES COMPATIBLE: Direct absolute link to the exact wolf photo asset */
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Front_view_of_a_resting_Canis_lupus_ssp.jpg");
-      background-size: cover; 
-      background-position: center; 
+      /* Increased padding to give the portrait wolf photo plenty of vertical breathing room */
+      padding: 180px 20px; 
+      
+      /* FIXED LIVE POINTER: Correct file URL path for your exact close-up wolf image */
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Front_view_of_a_resting_Canis_lupus_ssp.jpg');
+      
+      /* ADJUSTMENTS: Fits the full photo frame safely inside the block without cropped edges */
+      background-size: contain; 
+      background-position: center center; 
       background-repeat: no-repeat;
+      
+      /* Fallback dark blend layer to frame the image nicely if screens get wide */
+      background-color: #1a1a1a; 
     }
 
     .hero h2 {
@@ -75,7 +82,7 @@
       margin: auto;
       line-height: 1.8;
       font-size: 1.1rem;
-      background: rgba(0, 0, 0, 0.65); /* Keeps paragraph text completely legible */
+      background: rgba(0, 0, 0, 0.75); /* Darkened slightly more for premium text readability */
       color: #ffffff;
       padding: 20px;
       border-radius: 10px;

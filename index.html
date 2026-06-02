@@ -52,28 +52,35 @@ nav a:hover{
     color:#7dd87d;
 }
 
-.hero{
-    text-align:center;
-    padding:100px 20px;
-   <img src="https://wikimedia.org" alt="A gray wolf standing in a snowy forest" style="max-width: 100%; height: auto;">
-    background-size:cover;
-    background-position:center;
+<div class="hero">
+  <h1>Welcome to the Wild</h1>
+  <p>This text sits on top of the wolf image.</p>
+</div>
+.hero { 
+  text-align: center; 
+  padding: 100px 20px; 
+  background-image: url('https://wikimedia.org');
+  background-size: cover; 
+  background-position: center; 
 }
 
-.hero h2{
-    font-size:3rem;
-    margin-bottom:20px;
-    text-shadow:2px 2px 10px black;
+.hero h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  /* Adds a subtle shadow so your header pops against the autumn background */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
 }
 
-.hero p{
-    max-width:800px;
-    margin:auto;
-    line-height:1.8;
-    font-size:1.1rem;
-    background:rgba(0,0,0,0.5);
-    padding:15px;
-    border-radius:10px;
+.hero p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  background: rgba(0, 0, 0, 0.6); /* Slightly darkened for better contrast */
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .button{

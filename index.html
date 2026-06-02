@@ -1,149 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wolves of North America</title>
-</nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wolves of North America</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#1a1a1a;
-    color:white;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background: #1a1a1a;
+        color: white;
+    }
 
-header{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(to bottom,#2e4d32,#1a1a1a);
-}
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(to bottom, #2e4d32, #1a1a1a);
+    }
 
-header h1{
-    font-size:3.5rem;
-    margin-bottom:15px;
-}
+    header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+    }
 
-header p{
-    font-size:1.2rem;
-}
+    header p {
+        font-size: 1.2rem;
+    }
 
-nav{
-    background:#222;
-    padding:15px;
-    text-align:center;
-}
+    nav {
+        background: #222;
+        padding: 15px;
+        text-align: center;
+    }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-    transition:0.3s;
-}
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
 
-nav a:hover{
-    color:#7dd87d;
-}
+    nav a:hover {
+        color: #7dd87d;
+    }
 
-<div class="hero">
-  <h1>Welcome to the Wild</h1>
-  <p>This text sits on top of the wolf image.</p>
-</div>
-.hero { 
-  text-align: center; 
-  padding: 100px 20px; 
-  background-image: url('https://wikimedia.org');
-  background-size: cover; 
-  background-position: center; 
-}
+    /* --- FIXED HERO BANNER CONTAINER --- */
+    .hero { 
+      text-align: center; 
+      padding: 100px 20px; 
+      /* FIXED: Direct URL path to your exact high-quality wolf photo */
+      background-image: url('https://wikimedia.org');
+      background-size: cover; 
+      background-position: center; 
+    }
 
-.hero h1 {
-  color: #ffffff;
-  font-size: 3rem;
-  margin-bottom: 20px;
-  /* Adds a subtle shadow so your header pops against the autumn background */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
-}
+    .hero h2 {
+      color: #ffffff;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      /* Adds a deep text shadow so the title is perfectly clear against the background colors */
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9); 
+    }
 
-.hero p {
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.8;
-  font-size: 1.1rem;
-  background: rgba(0, 0, 0, 0.6); /* Slightly darkened for better contrast */
-  color: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
-}
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      background: rgba(0, 0, 0, 0.65); /* Keeps paragraph text completely legible */
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-.button{
-    display:inline-block;
-    margin-top:25px;
-    padding:15px 30px;
-    background:#4caf50;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
+    /* --- FIXED BUTTON CENTERING --- */
+    .button {
+        display: block;
+        width: fit-content;
+        margin: 25px auto 0 auto; /* Forces the button to sit exactly in the center */
+        padding: 15px 30px;
+        background: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.2s ease;
+    }
 
-.button:hover{
-    background:#66bb6a;
-}
+    .button:hover {
+        background: #66bb6a;
+    }
 
-.facts{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-    padding:60px 20px;
-}
+    .facts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        padding: 60px 20px;
+    }
 
-.card{
-    background:#2b2b2b;
-    width:300px;
-    padding:25px;
-    border-radius:12px;
-    text-align:center;
-    box-shadow:0 0 15px rgba(0,0,0,0.4);
-}
+    .card {
+        background: #2b2b2b;
+        width: 300px;
+        padding: 25px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
 
-.card h3{
-    margin-bottom:15px;
-    color:#7dd87d;
-}
+    .card h3 {
+        margin-bottom: 15px;
+        color: #7dd87d;
+    }
 
-.about{
-    padding:60px 20px;
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-}
+    .about {
+        padding: 60px 20px;
+        text-align: center;
+        max-width: 900px;
+        margin: auto;
+    }
 
-.about h2{
-    margin-bottom:20px;
-    color:#7dd87d;
-}
+    .about h2 {
+        margin-bottom: 20px;
+        color: #7dd87d;
+    }
 
-.about p{
-    line-height:1.8;
-}
+    .about p {
+        line-height: 1.8;
+    }
 
-footer{
-    background:#111;
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
-}
-</style>
-
+    footer {
+        background: #111;
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
@@ -152,7 +151,7 @@ footer{
     <p>Exploring the history, ecology, and conservation of wolves across the continent.</p>
 </header>
 
-   <nav>
+<nav>
     <a href="history.html">History</a>
     <a href="wolf_packs.html">Wolf Packs</a>
     <a href="Yellowstone.html">Yellowstone</a>

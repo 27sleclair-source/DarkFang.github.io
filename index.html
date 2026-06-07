@@ -206,6 +206,31 @@
 <footer>
     <p>Social Studies Final Project • Wolves of North America • 2026</p>
 </footer>
+  <script>
+  // List of core topic pages (excludes resources.html)
+const wolfPages = [
+    "history.html",
+    "wolf_packs.html",
+    "Yellowstone.html",
+    "conservation.html",
+    "fun_facts.html"
+];
+
+// Grab the button by its ID
+const exploreButton = document.getElementById("exploreBtn");
+
+// Add a click listener to the button
+exploreButton.addEventListener("click", function(event) {
+    // Stop the default "#" anchor link behavior
+    event.preventDefault();
+    
+    // Pick a random index from the array
+    const randomIndex = Math.floor(Math.random() * wolfPages.length);
+    
+    // Redirect the user to the randomly selected page
+    window.location.href = wolfPages[randomIndex];
+});
+</script>
 
 </body>
 </html>
